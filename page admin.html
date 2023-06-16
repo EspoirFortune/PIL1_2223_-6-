@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'administration</title>
+    <style>
+        /* Styles CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        nav a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .profile-info {
+            font-size: 18px;
+        }
+
+        .settings {
+            margin-bottom: 20px;
+        }
+
+        .settings h2 {
+            margin-bottom: 10px;
+        }
+
+        .settings-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .settings-form input[type="text"],
+        .settings-form input[type="email"],
+        .settings-form textarea {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .settings-form input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Page d'administration</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Utilisateurs</a></li>
+                <li><a href="#">Paramètres</a></li>
+                <li><a href="#">Déconnexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="profile">
+            <img src="" alt="Photo de profil">
+            <div class="profile-info">
+                <h2>Nom de l'administrateur</h2>
+                <p>Email: admin@example.com</p>
+            </div>
+        </div>
+
+        <div class="settings">
+            <h2>Modifier les paramètres</h2>
+            <form class="settings-form" action="">
+                <label for="username">Nom d'utilisateur:</label>
+                <input type="text" id="username" name="username" value="admin">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value=".com">
+
+                <label for="bio">Biographie:</label>
+                <textarea id="bio" name="bio"></textarea>
+
+                <input type="submit" value="Enregistrer les modifications">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2023 - Tous droits réservés
+    </footer>
+</body>
+</html>
